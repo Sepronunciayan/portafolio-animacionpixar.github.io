@@ -1,0 +1,468 @@
+body {
+    background-image: url(imagenes/pixar2.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+    margin-right: 200px;
+    height: 85vh;
+
+
+}
+
+/* --------------------------------------------------------- */
+.titulo-boton,
+h1 {
+    color: rgba(0, 0, 0, 0.405);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-align: center;
+}
+
+.targeta-menu {
+    width: 150px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: rgba(1, 220, 228, 0);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.329);
+    color: #00000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 790px;
+    left: 22px;
+    margin: auto;
+    border-radius: 1px solid gray;
+    z-index: 999;
+
+}
+
+.targeta-menu:hover {
+    color: rgba(0, 0, 0, 0);
+    background: #3f3f3f83;
+    color: #fff;
+}
+
+h1:hover {
+    color: white;
+}
+
+
+
+/* --------------------------------------------------------- */
+
+.remi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 100vh;
+    top: 100vh;
+    animation-name: remi;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    z-index: 1;
+}
+
+#remi {
+    width: 200px;
+
+}
+
+@keyframes remi {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, -650px);
+    }
+
+    100% {
+        transform: translate(0px, 900px);
+        animation-timing-function: ease-in;
+    }
+
+}
+
+.up {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    right: 976px;
+    animation-name: casa-up;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: scaleX(-1);
+    animation-delay: 5s;
+
+}
+
+#up {
+    width: 350px;
+}
+
+@keyframes casa-up {
+    0% {
+        transform: translateY(-200px) translatex(1120px);
+    }
+
+    100% {
+        transform: translateY(0px) translatex(1120px);
+
+    }
+
+}
+
+.lampara {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 13vh;
+    animation-name: saltarin;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    right: 225px;
+    bottom: -144px;
+
+}
+
+#lampara {
+    width: 180px;
+    height: 200px;
+    transform: scaleX(-1);
+
+}
+
+@keyframes saltarin {
+
+    0% {
+        transform: translateY(-px) translatex(-1px);
+    }
+
+    6.25% {
+        transform: translateY(-150px) translatex(-42, 625px);
+    }
+
+    12.5% {
+        transform: translateY(-160px) translatex(-85.25px);
+    }
+
+    18.75% {
+        transform: translateY(-170px) translatex(-127.875px);
+    }
+
+    25% {
+        transform: translateY(-180px) translatex(-170.5px);
+        /* SOBRE LA R */
+    }
+
+    31.25% {
+        transform: translateY(-170px) translatex(-213, 125px);
+    }
+
+    37.5% {
+        transform: translateY(-160px) translatex(-255.75px);
+    }
+
+    43.75% {
+        transform: translateY(-150px) translatex(-298, 375px);
+    }
+
+    50% {
+        transform: translateY(-0px) translatex(-341px);
+        /* EN A*/
+    }
+
+    56.25% {
+        transform: translateY(-150px) translatex(-383, 625px);
+    }
+
+    62.5% {
+        transform: translateY(-160px) translatex(-426.25px);
+    }
+
+    68.75% {
+        transform: translateY(-170px) translatex(-468, 875px);
+    }
+
+    75% {
+        transform: translateY(-180px) translatex(-511.5px);
+        /* SOBRE LA X */
+    }
+
+    81.25% {
+        transform: translateY(-170px) translatex(-554, 125px);
+    }
+
+    87.5% {
+        transform: translateY(-160px) translatex(-596.75px);
+    }
+
+    93.75% {
+        transform: translateY(-150px) translatex(-639, 375px);
+    }
+
+    100% {
+        transform: translateY(-0px) translatex(-682px);
+        /* EN I */
+    }
+
+}
+
+.contenedor-letra-a {
+    height: 35.9vh;
+    position: absolute;
+    right: 711px;
+    bottom: -11px;
+    animation-name: a-plastada;
+    animation-duration: 0.5s;
+    animation-delay: 0.6s;
+
+}
+
+#imagen-letra-a {
+    width: 143px;
+}
+
+@keyframes a-plastada {
+
+    0% {
+        transform: perspective(0px);
+    }
+
+    50% {
+        transform: rotatex(60deg);
+    }
+
+    100% {
+        transform: rotatex(0deg);
+    }
+
+}
+
+.contenedor-letra-i {
+    height: 35.9vh;
+    position: absolute;
+    left: 649px;
+    bottom: -11px;
+    animation-name: i-saltarin;
+    animation-duration: 0s 10s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+#imagen-letra-i {
+    width: 140px;
+}
+
+@keyframes i-saltarin {
+
+    0% {
+        transform: perspective(0px);
+    }
+
+    50% {
+        transform: rotatex(60deg);
+    }
+
+    100% {
+        transform: perspective(0px) rotatex(100deg);
+
+    }
+
+}
+
+.rayo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25.9vh;
+    position: absolute;
+    margin-left: -110px;
+    animation-name: rayo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#rayo {
+    width: 200px;
+    transform: scaleX(-1);
+}
+
+@keyframes rayo {
+
+    0% {
+        transform: translateY(0px) translatex(0px);
+    }
+
+    0% {
+        transform: translatez(-2px) translatex(1500px)rotate(20deg);
+    }
+}
+
+.cuerda {
+    display: flex;
+    justify-self: start;
+    align-items: flex-start;
+    background-color: black;
+    background-image: url(imagenes/cuerda.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1px rgba(252, 1, 1, 0.336), 0 0 1px 3px rgba(0, 0, 0, 0.356);
+    left: 177px;
+    width: 10px;
+    height: 604px;
+    position: absolute;
+    animation-name: cuerda;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes cuerda {
+    0% {
+        transform: translate(0px, 0px) rotate3d(10deg);
+    }
+
+    100% {
+        transform: translate(0px, -300px);
+
+    }
+}
+
+.walle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 165.9vh;
+    position: absolute;
+    animation-name: walle;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+
+}
+
+#walle {
+    width: 300px;
+
+}
+
+@keyframes walle {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, -300px);
+
+    }
+
+}
+
+/* AVIONES */
+
+.contenedor-aviones {
+    width: 99%;
+    height: 150%;
+    margin-top: 400px;
+    background-image: url(imagenes/cielo-azul.avif);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.avion1 {
+    position: relative;
+    right: -170vh;
+    top: 100px;
+    animation-name: avion1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+    z-index: 1;
+}
+
+#avion1 {
+    width: 300px;
+}
+
+@keyframes avion1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(-1100px, 0px);
+
+    }
+
+}
+
+.avion2 {
+    position: relative;
+    left: 1vh;
+    top: 200px;
+    animation-name: avion2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    z-index: 1;
+}
+
+#avion2 {
+    width: 250px;
+}
+
+@keyframes avion2 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(1100px, 0px);
+
+    }
+
+}
+
+.bichos {
+    position: relative;
+    right: -170vh;
+    top: 200px;
+    animation-name: avion1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 12s;
+    z-index: 1;
+
+}
+
+#bichos {
+    width: 300px;
+    transform: scaleX(-1);
+}
+
+@keyframes bichos {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(-1100px, 0px);
+
+    }
+
+}
